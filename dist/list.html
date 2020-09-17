@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src='js/jquery-1.11.3.js'></script>
+    <script src='js/jquery.cookie.js'></script>
+    <script src='js/nav.js'></script>
+    <script src="js/list.js"></script>
+    <script>
+        $(function () {
+            topMove();
+            listMove();
+            leftMove2();
+            xiala();
+            commodityList();
+            listAnimate();
+        })
+    </script>
+</head>
+
+<body>
+    <hgroup id="hgroup" class="banner ">
+        <div class="container">
+            <ul>
+                <li><a href="#">小米商城</a><span>|</span></li>
+                <li><a href="#">MIUI</a><span>|</span></li>
+                <li><a href="#">Iot</a><span>|</span></li>
+                <li><a href="#">云服务</a><span>|</span></li>
+                <li><a href="#">金融</a><span>|</span></li>
+                <li><a href="#">有品</a><span>|</span></li>
+                <li><a href="#">小爱开放平台</a><span>|</span></li>
+                <li><a href="#">企业团购</a><span>|</span></li>
+                <li><a href="#">资质证照</a><span>|</span></li>
+                <li><a href="#">协议规则</a><span>|</span></li>
+                <li><a href="#">下载app</a><span>|</span></li>
+                <li><a href="#">Select Location</a></li>
+            </ul>
+            <div class="left r">
+                <a href="login.html">登录</a>
+                <a href="register.html">注册</a>
+                <a href="goodCart.html"><i class="iconfont icon-gouwuchekong"></i> 购物车<span>(0)</span></a>
+            </div>
+        </div>
+    </hgroup>
+    <header id="header">
+
+        <div class="container dinwei ">
+            <img src="images/2019-08-13T00-52-11_03.png" alt="" class="clss">
+            <div class="center">
+                <ul>
+                    <li>全部商品分列</li>
+                    <!-- <li>啦啦啦</li>
+                        <li>啦啦啦</li>
+                        <li>啦啦</li>
+                        <li>啦啦啦</li>
+                        <li>啦啦啦啦</li>
+                        <li>啦啦啦</li>
+                        <li>啦啦啦</li>
+                        <li>啦啦啦啦啦</li>
+                        <li>啦啦啦</li> -->
+                </ul>
+            </div>
+            <!-- 下拉菜单 -->
+
+
+            <div class="right r">
+                <input type="text" class="xiala">
+                <div class="r"><i class="iconfont icon-search"></i></div>
+                <ul class="xiala1 ">
+                    <li>小米9</li>
+                    <li>Redmi K20 pro</li>
+                    <li>Redmi K20</li>
+                    <li>Redmi Note 7 Pro</li>
+                    <li>Redmi note 7</li>
+                    <li>小米电视4c</li>
+                    <li>电视32英寸</li>
+                    <li>笔记本pro</li>
+                    <li>小爱音箱</li>
+                    <li>净水器</li>
+                </ul>
+            </div>
+        </div>
+        <div class="left">
+            <div class="container">
+                <!-- <ul>
+                        <li>
+                            <img src="images/02.png" alt="">
+                            <p>小米手机</p>
+                            <p>1700元起</p>
+                        </li>
+                        <li>
+                            <img src="images/02.png" alt="">
+                            <p>小米手机</p>
+                            <p>1700元起</p>
+                        </li>
+                        <li>
+                            <img src="images/02.png" alt="">
+                            <p>小米手机</p>
+                            <p>1700元起</p>
+                        </li>
+                        <li>
+                            <img src="images/02.png" alt="">
+                            <p>小米手机</p>
+                            <p>1700元起</p>
+                        </li>
+                        <li>
+                            <img src="images/02.png" alt="">
+                            <p>小米手机</p>
+                            <p>1700元起</p>
+                        </li>
+                        <li>
+                            <img src="images/02.png" alt="">
+                            <p>小米手机</p>
+                            <p>1700元起</p>
+                        </li>
+                    </ul> -->
+            </div>
+        </div>
+        <div class="container dinwei">
+            <div class="shenan">
+                <div class="fenlei l">
+                    <ul>
+                        <!-- <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li>
+                    <li><span>设哪哪哪哪哪哪哪哪</span><i class="iconfont icon-zuokuohao1"></i></li> -->
+                    </ul>
+                </div>
+                <div class="right-50 l">
+                    <!-- <div class="right-20">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/80-80-new.png" alt="">
+                                    <span>啦啦啦啦啦</span>
+                                </a>
+                            </li>
+                        </ul> 
+                        
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <article id="a">
+        <div class="a-1">
+            <ul>
+                <li><a href="#"><img
+                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/60c458607b4b3ce197127d47e277e178.jpg?w=5120&h=1240&bg=B8ADD9"
+                            alt=""></a></li>
+                <li><a href="#"><img
+                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96d0be92253c174e068b86970fa72c76.jpg?w=5120&h=1240&bg=D2CAEB"
+                            alt=""></a></li>
+                <li><a href="#"><img
+                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/60c458607b4b3ce197127d47e277e178.jpg?w=5120&h=1240&bg=B8ADD9"
+                            alt=""></a></li>
+            </ul>
+            <div class="daohang-1">
+                <div style="background: orange;"></div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <main id="main">
+        <div class="container">
+            <p class="h">
+                明星产品
+            </p>
+        </div>
+        <div class="container  plate1">
+            <!-- <div class="top">
+                <a href="#">
+                    <div class="top1 l">
+                        <div>
+                            <img src="images/02.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="top2 l">
+                        <p>
+                            Redmi K20 Pro
+                        </p>
+                        <p>晓龙855处理器啦啦啦啦啦啦</p>
+                        <p>
+                            <span>2299</span>元起
+                            <del>2500元</del>
+                        </p>
+                        <p>
+                            立即购买
+                        </p>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+        <!-- <div class="container plate">
+            <div class="left l">
+                <div class="left1 jianju">
+                    <a href="#">
+                        <div>
+                            <img src="images/02.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="left2">
+                    <a href="#">
+                        <p>Redmi K20</p>
+                        <p>弹出全面怕</p>
+                        <p>
+                            <span>2299</span>元起
+                            <del>2500元</del>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="left l">
+                <div class="left1">
+                    <a href="#">
+                        <div>
+                            <img src="images/02.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="left2">
+                    <a href="#">
+                        <p>Redmi K20</p>
+                        <p>弹出全面怕</p>
+                        <p>
+                            <span>2299</span>元起
+                            <del>2500元</del>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+         -->
+    </main>
+
+
+
+
+    <aside id="c" class="container">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-xiuli"></i>
+                    <span>预约维修服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-tian"></i>
+                    <span>7天无理由退货</span>
+                </a>
+            </li>
+            <li>
+
+                <a href="#">
+                    <i class="iconfont icon-icon-test"></i>
+                    <span>15天免费换货</span>
+                </a>
+            </li>
+            <li>
+
+                <a href="#">
+                    <i class="iconfont icon-liwu"></i>
+                    <span>满150元包邮</span>
+                </a>
+            </li>
+            <li>
+
+                <a href="#">
+                    <i class="iconfont icon-wangdian"></i>
+                    <span>520余家售后网点</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div id="d" class="container">
+        <div class="left l">
+            <table>
+                <tr>
+                    <th>帮助中心</th>
+                    <th>服务支持</th>
+                    <th>线下门店</th>
+                    <th>关于小米</th>
+                    <th>关注我们</th>
+                    <th>特色服务</th>
+                </tr>
+                <tr>
+                    <a href="#"></a>
+                    <td> <a href="#">账户管理</a></td>
+                    <td> <a href="#">售后政策</a></td>
+                    <td> <a href="#">小米之家</a></td>
+                    <td> <a href="#">了解小米</a></td>
+                    <td> <a href="#">新浪微博</a></td>
+                    <td> <a href="#">F码通道</a></td>
+                </tr>
+                <tr>
+                    <td> <a href="#">购物指南</a></td>
+                    <td> <a href="#">自助服务</a></td>
+                    <td> <a href="#">服务网点</a></td>
+                    <td> <a href="#">加入小米</a></td>
+                    <td> <a href="#">官方微信</a></td>
+                    <td> <a href="#">礼物码</a></td>
+                </tr>
+                <tr>
+                    <td> <a href="#">订单操作</a></td>
+                    <td> <a href="#">>相关下载</a< /td>
+                    <td> <a href="#">授权体验店</a></td>
+                    <td> <a href="#">投资者关系</a></td>
+                    <td> <a href="#">>联系我们</a< /td>
+                    <td> <a href="#">防伪标记</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="right l">
+            <p>400-100-5678</p>
+            <p>周一至周日 8:00-18:00</p>
+            <p>（仅收市话费）</p>
+            <a href="#">人工客服</a>
+        </div>
+    </div>
+    <footer id="footer" class="container">
+        <div class="footer">
+            <div class="footer1 l">
+                <img src="/images/logo_03.png" alt="">
+            </div>
+            <div class="footer2 l">
+                <p>
+                    <a rel="nofollow" href="//www.mi.com/index.html" target="_blank">小米商城</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://www.miui.com/" target="_blank">MIUI</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://home.mi.com/index.html" target="_blank">米家</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="http://www.miliao.com/" target="_blank">米聊</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://www.duokan.com/" target="_blank">多看</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="http://game.xiaomi.com/" target="_blank">游戏</a>
+                    <span class="sep">|</span><a rel="nofollow" href="http://www.miwifi.com/" target="_blank">路由器</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//www.mi.com/micard/" target="_blank">米粉卡</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://b.mi.com/?client_id=180100031058&masid=17409.0358"
+                        target="_blank">政企服务</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://xiaomi.tmall.com/" target="_blank">小米天猫店</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//privacy.mi.com/all/zh_CN/" target="_blank">小米集团隐私政策</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/ded8d0e4a77d.html"
+                        target="_blank">小米商城隐私政策</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//www.mi.com/about/user-agreement/" target="_blank">小米商城用户协议</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//static.mi.com/feedback/" target="_blank">问题反馈</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//www.mi.com/jiancha/" target="_blank">廉正举报</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://integrity.mi.com/" target="_blank">诚信合规</a>
+                    <span class="sep">|</span><br>
+                    <a rel="nofollow" href="javascript:void(0);" class="J_siteGlobalRegion">Select Location</a>
+                </p>
+                <p>
+                    <a href=" " target="_blank" title="mi.com">mi.com</a> 京ICP证110507号
+                    <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">京ICP备10046444号</a>
+                    <a rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"
+                        target="_blank">京公网安备11010802020134号 </a>
+                    <a href="//www.mi.com/culture-license/" target="_blank">京网文[2017]1530-131号</a> <br>
+                    <a href="//www.mi.com/medical/record/" target="_blank">（京）网械平台备字（2018）第00005号
+                    </a>
+                    <a href="//www.mi.com/medical/qualification/" target="_blank">互联网药品信息服务资格证 (京) -非经营性-2014-0090
+                    </a>
+                    <a href="//www.mi.com/business-license/" target="_blank">营业执照</a>
+                    <a href="//www.mi.com/medical/list/" target="_blank">医疗器械公告</a>
+                    <br>
+                    <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png"
+                        target="_blank">增值电信业务许可证</a>&nbsp;
+                    网络食品经营备案（京）【2018】WLSPJYBAHF-12 &nbsp;
+                    <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png"
+                        target="_blank">食品经营许可证</a>
+                    <br>违法和不良信息举报电话：185-0130-1238 <a href='https://www.mi.com/static/intellectual/index.html'
+                        target="_blank">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                </p>
+            </div>
+        </div>
+        <div class="info-links">
+            <a rel="nofollow"
+                href="//privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn"
+                target="_blank">
+                <img rel="nofollow" src="//i1.mifile.cn/f/i/17/site/truste.png" alt="TRUSTe Privacy Certification" />
+            </a>
+            <a rel="nofollow" href="//search.szfw.org/cert/l/CX20120926001783002010" target="_blank">
+                <img rel="nofollow" src="//s01.mifile.cn/i/v-logo-2.png" alt="诚信网站" />
+            </a>
+            <a rel="nofollow" href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&ct=df&pa=461082"
+                target="_blank">
+                <img rel="nofollow" src="//s01.mifile.cn/i/v-logo-1.png" alt="可信网站" />
+            </a>
+            <a rel="nofollow" href="http://www.315online.com.cn/member/315140007.html" target="_blank">
+                <img rel="nofollow" src="//s01.mifile.cn/i/v-logo-3.png" alt="网上交易保障中心" />
+            </a>
+            <a rel="nofollow" href="https://www.mi.com/service/buy/commitment/" target="_blank">
+                <img rel="nofollow" src="//i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png"
+                    alt="诚信经营 放心消费" />
+            </a>
+        </div>
+        <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+    </footer>
+</body>
+
+</html>
